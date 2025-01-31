@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajul Balaji - Cloud Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #87CEEB, #ffffff);
+            overflow-x: hidden;
+        }
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            position: relative;
+        }
+        .cloud {
+            position: absolute;
+            width: 100px;
+            animation: float 6s infinite ease-in-out;
+        }
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .cloud-1 { top: 10%; left: 20%; animation-delay: 0s; }
+        .cloud-2 { top: 30%; right: 10%; animation-delay: 1s; }
+        .cloud-3 { top: 50%; left: 40%; animation-delay: 2s; }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        .projects {
+            list-style-type: none;
+            padding: 0;
+        }
+        .projects li {
+            margin-bottom: 20px;
+        }
+        .projects h3 {
+            margin: 0;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            border: none;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <h1>Welcome to My Cloud Portfolio</h1>
+        <p>Exploring the world of DevOps and Cloud Technologies</p>
+        <img src="cloud1.png" class="cloud cloud-1" alt="Cloud">
+        <img src="cloud2.png" class="cloud cloud-2" alt="Cloud">
+        <img src="cloud3.png" class="cloud cloud-3" alt="Cloud">
+    </div>
+    
+    <div class="container">
+        <h2>About Me</h2>
+        <p>I'm Rajul Balaji, a passionate DevOps Engineer focused on cloud computing, automation, and scalable solutions.</p>
+        
+        <h2>Personal Projects</h2>
+        <ul class="projects">
+            <li>
+                <h3>CI/CD Pipeline with GitHub Actions</h3>
+                <p><strong>Technologies:</strong> GitHub Actions, Docker</p>
+                <p>Designed and implemented a CI/CD pipeline for web applications, automating testing, Docker image builds, and deployments. Configured workflows to ensure zero downtime and code quality validation.</p>
+            </li>
+            <li>
+                <h3>Infrastructure as Code (IaC)</h3>
+                <p><strong>Technologies:</strong> Terraform, AWS</p>
+                <p>Automated provisioning of EC2 instances and S3 buckets using Terraform, ensuring scalability and consistency. Developed reusable Terraform modules for streamlined infrastructure deployment.</p>
+            </li>
+            <li>
+                <h3>Kubernetes Cluster Management</h3>
+                <p><strong>Technologies:</strong> Kubernetes, Helm, Prometheus</p>
+                <p>Deployed and managed multi-container applications using Kubernetes. Utilized Helm for package management and configured Prometheus for real-time monitoring and alerting.</p>
+            </li>
+            <li>
+                <h3>Automated Backup Solution</h3>
+                <p><strong>Technologies:</strong> Bash Scripting, AWS S3, Cron Jobs</p>
+                <p>Developed a backup automation script to periodically upload critical files to AWS S3. Reduced manual intervention by 90% and ensured consistent backups for disaster recovery.</p>
+            </li>
+            <li>
+                <h3>Cloud Cost Optimization</h3>
+                <p><strong>Technologies:</strong> AWS Cost Explorer, Terraform</p>
+                <p>Analyzed cloud resource usage and implemented cost-saving measures, reducing monthly cloud expenses by 15%. Automated resource provisioning schedules using Terraform scripts.</p>
+            </li>
+        </ul>
+
+        <a href="https://github.com/RajulBalaji" target="_blank" class="button">View My GitHub</a>
+        <a href="https://www.linkedin.com/in/rajulbalaji/" target="_blank" class="button">Connect on LinkedIn</a>
+
+        <a href="path/to/your/resume.pdf" download class="button">Download My Resume</a>
+    </div>
+</body>
+</html>
